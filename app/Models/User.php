@@ -13,6 +13,9 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable, UuidTrait;
 
+    public $increments = false;
+    protected $keyType = 'uuid';
+
     /**
      * The attributes that are mass assignable.
      *
