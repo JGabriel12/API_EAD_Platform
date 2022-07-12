@@ -14,7 +14,11 @@ class CreateSupportsTable extends Migration
     public function up()
     {
         Schema::create('supports', function (Blueprint $table) {
-            $table->id();
+            $table->uuid('id')->primary();
+            $table->uuid('lesson_id')->nullable(false);
+            $table->uuid('user_id')->nullable(false);
+            $table->enum('status', ['P', 'A', 'C'])->default('P'); // P = Pendente / A = Aberto / C = Completo
+            $table->text('description');
             $table->timestamps();
         });
     }
