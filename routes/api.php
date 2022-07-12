@@ -3,7 +3,8 @@
 use App\Http\Controllers\Api\{
     CourseController,
     LessonController,
-    ModuleController
+    ModuleController,
+    SupportController
 };
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
