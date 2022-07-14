@@ -18,7 +18,7 @@ class Lesson extends Model
 
     public function supports()
     {
-        return $this->hasMany(support::class);
+        return $this->hasMany(Support::class);
     }
 
     public function views()

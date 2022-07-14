@@ -86,18 +86,18 @@ class SupportTest extends TestCase
         $response->assertStatus(422);
     }
 
-    // public function test_create_support()
-    // {
-    //     $lesson = Lesson::factory()->create();
+    public function test_create_support()
+    {
+        $lesson = Lesson::factory()->create();
 
-    //     $payload = [
-    //         'lesson' => $lesson->id,
-    //         'status' => 'P',
-    //         'description' => 'Description Test',
-    //     ];
+        $payload = [
+            'lesson' => $lesson->id,
+            'status' => 'P',
+            'description' => 'Description Test',
+        ];
 
-    //     $response = $this->postJson('/supports', $payload, $this->defaultHeaders());
+        $response = $this->postJson('/supports', $payload, $this->defaultHeaders());
 
-    //     $response->assertStatus(422);
-    // }
+        $response->assertStatus(201);
+    }
 }
