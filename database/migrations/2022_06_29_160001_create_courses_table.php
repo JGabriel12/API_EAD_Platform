@@ -17,7 +17,7 @@ class CreateCoursesTable extends Migration
             $table->uuid('id')->primary();
             $table->string('name');
             $table->text('description');
-            $table->text('image')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
