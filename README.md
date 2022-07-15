@@ -51,16 +51,16 @@ REDIS_PASSWORD=null
 REDIS_PORT=6379
 ```
 
-Acessar o container
-
-```sh
-docker-compose exec laravel_8 bash
-```
-
 Suba os containers do projeto
 
 ```sh
 docker-compose up -d
+```
+
+Acessar o container
+
+```sh
+docker-compose exec laravel_8 bash
 ```
 
 Instalar as dependências do projeto
