@@ -12,9 +12,10 @@ cd my-project/
 Alterne para a branch laravel 8.x
 
 ```sh
-git checkout laravel-8
+git checkout master
 ```
 
+// Dentro Do BASH
 Remova o versionamento
 
 ```sh
